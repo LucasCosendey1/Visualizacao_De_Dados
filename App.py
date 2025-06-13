@@ -358,7 +358,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 
 st.write("""
-Na imagem acima, observa-se que as classes mais altas predominam nas universidades
+No gráfico acima, observa-se que as classes mais altas predominam nas universidades
 públicas: a Classe A representa 31,79% dos estudantes, seguida pela Classe B com
 24,72%. Enquanto isso, as classes D e E, que correspondem à parcela mais vulnerável da
 sociedade, somam juntas apenas 25,09% da população universitária. Isso demonstra que,
@@ -407,3 +407,31 @@ fig.update_traces(textinfo='percent+label', pull=[0.01]*5, hoverinfo='label+perc
 # Exibir no Streamlit
 st.plotly_chart(fig, use_container_width=True)
 
+
+st.write("""
+No gráfico referente às universidades privadas, percebemos que a Classe A ocupa 36,3%
+das vagas, enquanto as Classes D e E somam apenas 16,9% (sendo 11,2% da D e 5,7% da
+E). Embora existam programas como o ProUni e o FIES, que auxiliam estudantes de baixa
+renda a ingressar em instituições privadas, os dados deixam claro que o acesso continua
+bastante limitado, principalmente para os mais pobres.
+Essa realidade revela que o ensino superior no Brasil ainda é um privilégio das camadas
+mais altas da sociedade, tanto no setor público quanto no privado. A falta de equidade no
+acesso reflete as desigualdades estruturais da educação básica, nas quais estudantes de
+escolas públicas enfrentam maiores dificuldades para competir por vagas em instituições de
+ensino superior, mesmo nas públicas.
+""")
+ 
+ 
+ 
+st.write("""
+Portanto, é urgente repensar e fortalecer as políticas públicas de inclusão, investindo não
+apenas no acesso ao ensino superior, mas também na qualidade da educação básica, além de
+garantir permanência e apoio social aos estudantes de baixa renda, para que possam concluir
+seus cursos e romper o ciclo de exclusão educacional e social.
+""")
+ 
+ 
+st.markdown("<div style='margin-top: 50px;'></div>", unsafe_allow_html=True)
+ 
+col1, col2, col3 = st.columns([0.5, 5, 0.5])
+col2.write("### Persistência da Desigualdade: A Participação Estagnada das Classes Baixas no Ensino Superior Público")
